@@ -1,0 +1,80 @@
+$animation-time: 5s;
+$animation-delay: 0s;
+
+* {
+  color: #b6b6b6;
+  user-select: none;
+  font-size: 20rem;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(47, 211, 47);
+}
+
+ol.upper-alpha {
+  list-style-type: upper-alpha;
+}
+ol.decimal {
+  list-style-type: decimal;
+}
+
+input,
+textarea {
+  user-select: all;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+}
+
+// firefox
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.1) rgb(28, 39, 26);
+  }
+}
+
+// chrome
+::-webkit-scrollbar {
+  width: 10rem;
+  height: 10rem;
+}
+:hover::-webkit-scrollbar {
+  width: 14rem;
+  height: 14rem;
+  background-color: #020f00;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+  }
+}

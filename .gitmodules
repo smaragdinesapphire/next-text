@@ -1,0 +1,3 @@
+[submodule "submodules/jieKeys"]
+	path = submodules/jieKeys
+	url = https://github.com/smaragdinesapphire/jieKeys.git

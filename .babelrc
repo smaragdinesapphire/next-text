@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    // styled-components 避免 ssr 會解析錯誤
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ]
+}
